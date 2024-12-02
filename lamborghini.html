@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lamborghini</h1>
+        <div class="burger-menu" id="burger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <nav class="side-menu" id="side-menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="ferrari.html">Ferrari</a></li>
+            <li><a href="lamborghini.html">Lamborghini</a></li>
+            <li><a href="porsche.html">Porsche</a></li>
+            <li><a href="bmw.html">BMW</a></li>
+            <li><a href="mclaren.html">McLaren</a></li>
+            <li><a href="audi.html">Audi</a></li>
+            <li><a href="koenigsegg.html">Koenigsegg</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <a href="../index.html" class="back-button">← Back to Home</a>
+        <section class="car-details">
+            <h2>Sport Cars</h2>
+            <p>High-performance sport cars with bold designs and exceptional performance.</p>
+            <div class="car">
+                <div class="car-image" style="background-image: url('../images/lamborghini_huracan.jpg');"></div>
+                <h3>Lamborghini Huracán - $261,274</h3>
+                <div class="car-info">
+                    <p><strong>Specifications:</strong></p>
+                    <ul>
+                        <li>Engine: 5.2L V10</li>
+                        <li>Horsepower: 610 HP</li>
+                        <li>0-60 mph: 2.9 seconds</li>
+                        <li>Top Speed: 202 mph</li>
+                    </ul>
+                    <p><strong>Price Range:</strong> $250,000 - $300,000</p>
+                    <p><strong>Legacy:</strong> The Huracán offers a thrilling driving experience with its naturally aspirated V10 engine.</p>
+                    <p><strong>Production:</strong> The Huracán has been in production since 2014.</p>
+                </div>
+            </div>
+            <div class="car">
+                <div class="car-image" style="background-image: url('../images/lamborghini_aventador.jpg');"></div>
+                <h3>Lamborghini Aventador - $393,695</h3>
+                <div class="car-info">
+                    <p><strong>Specifications:</strong></p>
+                    <ul>
+                        <li>Engine: 6.5L V12</li>
+                        <li>Horsepower: 730 HP</li>
+                        <li>0-60 mph: 2.8 seconds</li>
+                        <li>Top Speed: 217 mph</li>
+                    </ul>
+                    <p><strong>Price Range:</strong> $350,000 - $450,000</p>
+                    <p><strong>Legacy:</strong> The Aventador represents Lamborghini's flagship model with its iconic V12 engine.</p>
+                    <p><strong>Production:</strong> The Aventador has been in production since 2011.</p>
+                </div>
+            </div>
+
+            <h2>Luxury Cars</h2>
+            <p>Ultimate luxury with high-end features and design.</p>
+            <div class="car">
+                <div class="car-image" style="background-image: url('../images/lamborghini_urus.jpg');"></div>
+                <h3>Lamborghini Urus - $218,009</h3>
+                <div class="car-info">
+                    <p><strong>Specifications:</strong></p>
+                    <ul>
+                        <li>Engine: 4.0L Twin-Turbo V8</li>
+                        <li>Horsepower: 641 HP</li>
+                        <li>0-60 mph: 3.6 seconds</li>
+                        <li>Top Speed: 190 mph</li>
+                    </ul>
+                    <p><strong>Price Range:</strong> $200,000 - $250,000</p>
+                    <p><strong>Legacy:</strong> The Urus combines Lamborghini's performance heritage with the practicality of an SUV.</p>
+                    <p><strong>Production:</strong> The Urus has been in production since 2018.</p>
+                </div>
+            </div>
+
+            <h2>Classic Cars</h2>
+            <p>Classic and vintage models that are timeless and iconic.</p>
+            <div class="car">
+                <div class="car-image" style="background-image: url('../images/lamborghini_miura.jpg');"></div>
+                <h3>Lamborghini Miura - $3,000,000</h3>
+                <div class="car-info">
+                    <p><strong>Specifications:</strong></p>
+                    <ul>
+                        <li>Engine: 3.9L V12</li>
+                        <li>Horsepower: 350 HP</li>
+                        <li>0-60 mph: 6.7 seconds</li>
+                        <li>Top Speed: 171 mph</li>
+                    </ul>
+                    <p><strong>Price Range:</strong> $2,000,000 - $3,500,000</p>
+                    <p><strong>Legacy:</strong> The Miura is widely regarded as the first supercar and remains a symbol of Lamborghini's design prowess.</p>
+                    <p><strong>Production:</strong> The Miura was produced from 1966 to 1973.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const burgerMenu = document.getElementById('burger-menu');
+        const sideMenu = document.getElementById('side-menu');
+
+        burgerMenu.addEventListener('click', () => {
+            sideMenu.classList.toggle('open');
+        });
+
+        function toggleInfo(element) {
+            element.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
