@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Luxury & Sports Cars</h1>
+        <div class="burger-menu" id="burger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <nav class="side-menu" id="side-menu">
+        <ul>
+            <li onclick="toggleSubmenu('ferrari')">Ferrari <span class="arrow">▶</span>
+                <ul class="submenu" id="submenu-ferrari">
+                    <li><a href="brands/ferrari.html">Sport Cars</a></li>
+                    <li><a href="brands/ferrari.html">Luxury Cars</a></li>
+                    <li><a href="brands/ferrari.html">Classic Cars</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleSubmenu('lamborghini')">Lamborghini <span class="arrow">▶</span>
+                <ul class="submenu" id="submenu-lamborghini">
+                    <li><a href="brands/lamborghini.html">Sport Cars</a></li>
+                    <li><a href="brands/lamborghini.html">Luxury Cars</a></li>
+                    <li><a href="brands/lamborghini.html">Classic Cars</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleSubmenu('porsche')">Porsche <span class="arrow">▶</span>
+                <ul class="submenu" id="submenu-porsche">
+                    <li><a href="brands/porsche.html">Sport Cars</a></li>
+                    <li><a href="brands/porsche.html">Luxury Cars</a></li>
+                    <li><a href="brands/porsche.html">Classic Cars</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleSubmenu('bmw')">BMW <span class="arrow">▶</span>
+                <ul class="submenu" id="submenu-bmw">
+                    <li><a href="brands/bmw.html">Sport Cars</a></li>
+                    <li><a href="brands/bmw.html">Luxury Cars</a></li>
+                    <li><a href="brands/bmw.html">Classic Cars</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleSubmenu('mclaren')">McLaren <span class="arrow">▶</span>
+                <ul class="submenu" id="submenu-mclaren">
+                    <li><a href="brands/mclaren.html">Sport Cars</a></li>
+                    <li><a href="brands/mclaren.html">Luxury Cars</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleSubmenu('audi')">Audi <span class="arrow">▶</span>
+                <ul class="submenu" id="submenu-audi">
+                    <li><a href="brands/audi.html">Sport Cars</a></li>
+                    <li><a href="brands/audi.html">Luxury Cars</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleSubmenu('koenigsegg')">Koenigsegg <span class="arrow">▶</span>
+                <ul class="submenu" id="submenu-koenigsegg">
+                    <li><a href="brands/koenigsegg.html">Hyper Cars</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class="grid-list">
+            <div class="brand">
+                <img src="images/ferrari_logo.png" alt="Ferrari Logo" class="brand-logo">
+                <h2>Ferrari</h2>
+                <p>Known for high-performance sports cars that deliver speed, luxury, and style.</p>
+                <a href="brands/ferrari.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="brand">
+                <img src="images/lamborghini_logo.png" alt="Lamborghini Logo" class="brand-logo">
+                <h2>Lamborghini</h2>
+                <p>Luxury supercars with bold designs and exceptional performance.</p>
+                <a href="brands/lamborghini.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="brand">
+                <img src="images/porsche_logo.png" alt="Porsche Logo" class="brand-logo">
+                <h2>Porsche</h2>
+                <p>Combining performance with everyday usability in their iconic vehicles.</p>
+                <a href="brands/porsche.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="brand">
+                <img src="images/bmw_logo.png" alt="BMW Logo" class="brand-logo">
+                <h2>BMW</h2>
+                <p>Renowned for luxury and performance, offering a wide range of high-quality vehicles.</p>
+                <a href="brands/bmw.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="brand">
+                <img src="images/mclaren_logo.png" alt="McLaren Logo" class="brand-logo">
+                <h2>McLaren</h2>
+                <p>Focused on producing high-performance, innovative sports cars.</p>
+                <a href="brands/mclaren.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="brand">
+                <img src="images/audi_logo.png" alt="Audi Logo" class="brand-logo">
+                <h2>Audi</h2>
+                <p>Known for advanced technology, luxury, and sleek design in their range of cars.</p>
+                <a href="brands/audi.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="brand">
+                <img src="images/koenigsegg_logo.png" alt="Koenigsegg Logo" class="brand-logo">
+                <h2>Koenigsegg</h2>
+                <p>Ultra-high performance hypercars that push the boundaries of technology and speed.</p>
+                <a href="brands/koenigsegg.html" class="learn-more">Learn More</a>
+            </div>
+            <!-- Add more brands as needed -->
+        </section>
+    </main>
+
+    <script>
+        const burgerMenu = document.getElementById('burger-menu');
+        const sideMenu = document.getElementById('side-menu');
+
+        burgerMenu.addEventListener('click', () => {
+            sideMenu.classList.toggle('open');
+        });
+
+        function toggleSubmenu(brand) {
+            const submenu = document.getElementById(`submenu-${brand}`);
+            submenu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
